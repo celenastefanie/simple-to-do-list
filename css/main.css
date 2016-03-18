@@ -13,5 +13,5 @@ html {
 }
 
 .is-clicked {
-  decoration: line-through;
+  text-decoration: line-through;
 }
