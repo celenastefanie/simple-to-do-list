@@ -1,4 +1,4 @@
-var $input = $('#toDo');
+var $input = $('#simplelist');
 var $list = $('.list');
 
 $('form').on('submit', function (e) {
@@ -6,9 +6,10 @@ $('form').on('submit', function (e) {
 
   e.preventDefault();
   $li.html($input.val());
+  $input.val('');
   $list.append($li);
 });
 
-$toDo.on('click', 'li', function (e) {
+$list.on('click', 'li', function (e) {
   $(this).toggleClass('is-clicked');
 });
